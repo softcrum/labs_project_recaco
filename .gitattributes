@@ -1,34 +1,33 @@
 * text=auto
 
-# These files are text and should be normalized (Convert crlf => lf)
-*.php  text
+# Files
 *.css  text
-*.js   text
 *.htm  text
 *.html text
-*.xml  text
-*.txt  text
-*.ini  text
 *.inc  text
+*.ini  text
+*.js   text
+*.php  text
+*.txt  text
+*.xml  text
 .htaccess text
 
-# Denote all files that are truly binary and should not be modified.
-# (binary is a macro for -text -diff)
-*.png  binary
+# Images
+*.7z   binary
+*.fla  binary
+*.flv  binary
+*.ico  binary
 *.jpg  binary
 *.jpeg binary
 *.gif  binary
-*.ico  binary
-*.mov  binary
-*.mp4  binary
-*.mp3  binary
-*.flv  binary
-*.fla  binary
-*.swf  binary
 *.gz   binary
-*.zip  binary
-*.7z   binary
+*.mov  binary
+*.mp3  binary
+*.mp4  binary
+*.png  binary
+*.swf  binary
 *.ttf  binary
+*.zip  binary
 
 # Documents
 *.doc  diff=astextplain
