@@ -1,0 +1,26 @@
+<section class="authenticate-login">
+  <div class="authenticate-login__container">
+    <div class="authenticate-login__wrapper">
+      <div class="authenticate-login__wrapper-logo">
+        <figure>
+          <i class="ion-ios-pulse-strong"></i>
+        </figure>
+      </div>
+      <div class="authenticate-login__wrapper-form">
+        <form name="AuthenticateLoginForm" ng-click="$ctrl.submitForm(AuthenticateLoginForm.$valid)" novalidate autocomplete="off">
+          <div class="authenticate-login__wrapper-form--data">
+            <input type="email" name="authUser" ng-model="authUser" required="true" spellcheck="false" autocomplete="off" placeholder="{{ 'authenticate.login.auth_user' | translate }}">
+            <i class="ion-ios-person-outline"></i>
+          </div>
+          <div class="authenticate-login__wrapper-form--data">
+            <input type="password" name="authPass" ng-model="authPass" required="true" spellcheck="false" autocomplete="off" placeholder="{{ 'authenticate.login.auth_pass' | translate }}">
+            <i class="ion-ios-locked-outline"></i>
+          </div>
+          <md-button class="md-raised md-primary" ng-disabled="AuthenticateLoginForm.$invalid">
+            {{ 'authenticate.login.login' | translate }}
+          </md-button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

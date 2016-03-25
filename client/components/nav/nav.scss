@@ -1,0 +1,56 @@
+.nav {
+  background-color: material-color('blue', '600');
+  color: #fff;
+  height: 75px;
+  padding: 0 30px;
+  position: relative;
+  top: 0;
+  &__group {
+    bottom: inherit;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    li {
+      cursor: pointer;
+      float: left;
+      list-style: none;
+      margin: 0 15px 0 0;
+      padding: 0 5px;
+      position: relative;
+      top: 3px;
+      text-transform: uppercase;
+      &.active {
+        border-top: 3px solid material-color('orange', '600');
+        top: 0;
+      }
+    }
+  }
+  &__subgroup {
+    display: none;
+    bottom: 0;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    &.active {
+      display: block;
+    }
+    li {
+      cursor: pointer;
+      float: left;
+      list-style: none;
+      margin: 0 15px 0 0;
+      padding: 0 5px;
+      &:last-child {
+        margin: 0;
+      }
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

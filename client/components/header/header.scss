@@ -1,0 +1,44 @@
+.header {
+  background-color: material-color('blue', '800');
+  border-bottom: 3px solid material-color('blue-grey', '300');
+  box-sizing: border-box;
+  height: 53px;
+  left: 0;
+  padding: 0 30px;
+  position: absolute;
+  right: 0;
+  top: 0 !important;
+  &__logo {
+    color: material-color('blue-grey', '50');
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0 0 45px;
+    position: relative;
+    width: 175px;
+    i {
+      color: #fff;
+      font-size: 32px;
+      left: 5px;
+      position: absolute;
+    }
+    &-by {
+      font-size: 12px;
+      left: 46px;
+      position: absolute;
+      top: 11px;
+    }
+    &-name {
+      position: relative;
+      top: -6px;
+    }
+  }
+}
+
+header {
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+}

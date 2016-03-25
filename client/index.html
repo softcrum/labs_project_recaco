@@ -1,0 +1,155 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <base href="/">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css" />
+      <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+      <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.css" />
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+      <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <!-- endinjector -->
+    <!-- endbuild -->
+
+
+
+    <link rel="icon" type="image/png" href="/assets/images/layout/favicon-64x64.png" sizes="64x64" />
+    <link rel="icon" type="image/png" href="/assets/images/layout/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/png" href="/assets/images/layout/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/images/layout/favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body ng-app="projectRecacoApp">
+    <!-- Section HEADER -->
+    <header></header>
+    <!-- Section LOADING UI ROUTER -->
+    <loading-ui-router></loading-ui-router>
+    <!-- Section VIEW -->
+    <div ui-view=""></div>
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-animate/angular-animate.js"></script>
+      <script src="bower_components/angular-aria/angular-aria.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="bower_components/angular-h-sweetalert/dist/ngSweetAlert.js"></script>
+      <script src="bower_components/angular-h-sweetalert/dist/ngSweetAlert.min.js"></script>
+      <script src="bower_components/angular-loader/angular-loader.js"></script>
+      <script src="bower_components/angular-messages/angular-messages.js"></script>
+      <script src="bower_components/angular-material/angular-material.js"></script>
+      <script src="bower_components/angular-message-format/angular-message-format.min.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-socket-io/socket.js"></script>
+      <script src="bower_components/angular-touch/angular-touch.js"></script>
+      <script src="bower_components/angular-translate/angular-translate.js"></script>
+      <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+      <script src="bower_components/lodash/lodash.js"></script>
+      <!-- endbower -->
+      <script src="socket.io-client/socket.io.js"></script>
+    <!-- endbuild -->
+    <!-- build:js(.tmp) app/app.js -->
+      <script src="app/app.js"></script>
+      <!-- injector:js -->
+      <script src="app/admin/admin.module.js"></script>
+      <script src="components/auth/auth.module.js"></script>
+      <script src="components/util/util.module.js"></script>
+      <script src="app/about/contact/contact.controller.js"></script>
+      <script src="app/about/contact/contact.js"></script>
+      <script src="app/about/contributors/contributors.controller.js"></script>
+      <script src="app/about/contributors/contributors.js"></script>
+      <script src="app/about/index/index.controller.js"></script>
+      <script src="app/about/index/index.js"></script>
+      <script src="app/about/version/version.controller.js"></script>
+      <script src="app/about/version/version.js"></script>
+      <script src="app/account/account.js"></script>
+      <script src="app/account/login/login.controller.js"></script>
+      <script src="app/account/settings/settings.controller.js"></script>
+      <script src="app/account/signup/signup.controller.js"></script>
+      <script src="app/admin/admin.controller.js"></script>
+      <script src="app/admin/admin.router.js"></script>
+      <script src="app/app.constant.js"></script>
+      <script src="app/authenticate/login/login.controller.js"></script>
+      <script src="app/authenticate/login/login.js"></script>
+      <script src="app/authenticate/logout/logout.js"></script>
+      <script src="app/dashboard/analytics/analytics.controller.js"></script>
+      <script src="app/dashboard/analytics/analytics.js"></script>
+      <script src="app/dashboard/cardiacCoherence/cardiacCoherence.controller.js"></script>
+      <script src="app/dashboard/cardiacCoherence/cardiacCoherence.js"></script>
+      <script src="app/dashboard/index/index.controller.js"></script>
+      <script src="app/dashboard/index/index.js"></script>
+      <script src="app/dashboard/person/person.controller.js"></script>
+      <script src="app/dashboard/person/person.js"></script>
+      <script src="app/dashboard/setting/setting.controller.js"></script>
+      <script src="app/dashboard/setting/setting.js"></script>
+      <script src="app/dashboard/users/users.controller.js"></script>
+      <script src="app/dashboard/users/users.js"></script>
+      <script src="app/home/index/index.controller.js"></script>
+      <script src="app/home/index/index.js"></script>
+      <script src="app/main/main.controller.js"></script>
+      <script src="app/main/main.js"></script>
+      <script src="app/myAccount/index/index.controller.js"></script>
+      <script src="app/myAccount/index/index.js"></script>
+      <script src="app/resources/ethicsCommittee/ethicsCommittee.controller.js"></script>
+      <script src="app/resources/ethicsCommittee/ethicsCommittee.js"></script>
+      <script src="app/resources/index/index.controller.js"></script>
+      <script src="app/resources/index/index.js"></script>
+      <script src="app/resources/informedConsent/informedConsent.controller.js"></script>
+      <script src="app/resources/informedConsent/informedConsent.js"></script>
+      <script src="app/resources/privacyPromise/privacyPromise.controller.js"></script>
+      <script src="app/resources/privacyPromise/privacyPromise.js"></script>
+      <script src="app/resources/projectSummary/projectSummary.controller.js"></script>
+      <script src="app/resources/projectSummary/projectSummary.js"></script>
+      <script src="components/auth/auth.service.js"></script>
+      <script src="components/auth/interceptor.service.js"></script>
+      <script src="components/auth/router.decorator.js"></script>
+      <script src="components/auth/user.service.js"></script>
+      <script src="components/footer/footer.directive.js"></script>
+      <script src="components/header/header.directive.js"></script>
+      <script src="components/loading-ui-router/loading-ui-router.directive.js"></script>
+      <script src="components/menu/menu.directive.js"></script>
+      <script src="components/mongoose-error/mongoose-error.directive.js"></script>
+      <script src="components/nav/nav.directive.js"></script>
+      <script src="components/oauth-buttons/oauth-buttons.controller.js"></script>
+      <script src="components/oauth-buttons/oauth-buttons.directive.js"></script>
+      <script src="components/socket/socket.service.js"></script>
+      <script src="components/util/util.service.js"></script>
+      <!-- endinjector -->
+    <!-- endbuild -->
+  </body>
+</html>

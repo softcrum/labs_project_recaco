@@ -1,0 +1,67 @@
+.menu {
+  background-color: material-color('blue-grey', '50');
+  border-right: 1px solid material-color('blue-grey', '100');
+  box-sizing: border-box;
+  color: material-color('blue-grey', '700');
+  height: 100%;
+  padding: 15px 0 20px;
+  &__group {
+    padding: 5px 0 30px;
+    &-link {
+      border-bottom: 1px solid material-color('blue-grey', '100');
+      box-sizing: border-box;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 200;
+      line-height: 20px;
+      height: 40px;
+      padding: 10px 8px 10px 45px;
+      position: relative;
+      i {
+        font-size: 25px;
+        left: 12px;
+        position: absolute;
+        top: 8px;
+        &.ion-ios-analytics-outline {
+          font-size: 22px;
+        }
+        &.ion-log-out {
+          font-size: 23px;
+          top: 9px;
+        }
+        &.ion-ios-people-outline {
+          left: 11px;
+        }
+        &.ion-ios-speedometer-outline {
+          font-size: 22px;
+        }
+      }
+      &:first-child {
+        border-top: 1px solid material-color('blue-grey', '100');
+      }
+      &:hover {
+        background-color: material-color('blue-grey', '100');
+        border-right: 3px solid material-color('blue', '400');
+      }
+      &.active {
+        background-color: material-color('blue-grey', '100');
+        border-right: 3px solid material-color('red', '300');
+      }
+    }
+    &-links {
+      position: relative;
+    }
+    &-title {
+      font-size: 12px;
+      padding: 0 10px 5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+menu {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}

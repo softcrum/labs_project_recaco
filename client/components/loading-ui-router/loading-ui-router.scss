@@ -1,0 +1,43 @@
+.loading-ui-router {
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  &__background {
+    background-color: material-color('blue-grey', '700');
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+  }
+  &__icon {
+    font-size: 40px;
+    padding: 20px 0 10px;
+    i {
+      background-image: url('../assets/images/components/loading-ui-router/loading.svg');
+      display: block;
+      height: 48px;
+      margin: 0 auto;
+      width: 48px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__wrapper {
+    height: 100%;
+    width: 100%;
+    &-container {
+      margin: 0 auto;
+      max-width: 300px;
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

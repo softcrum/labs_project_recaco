@@ -1,0 +1,13 @@
+<section class="menu">
+  <div class="menu__group" ng-repeat="group in menu">
+    <div class="menu__group-title">
+      {{group.group}}
+    </div>
+    <div class="menu__group-links">
+      <div class="menu__group-link" ng-class="link.href == active ? 'active' : ''" ng-repeat="link in group.list" ui-sref="{{link.href}}">
+        {{link.name}}
+        <i class="{{link.icon}}"></i>
+      </div>
+    </div>
+  </div>
+</section>

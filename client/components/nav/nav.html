@@ -1,0 +1,12 @@
+<section class="nav md-whiteframe-1dp">
+  <ul class="nav__group">
+    <li ng-class="nav.href == group ? 'active' : ''" ng-repeat="nav in nav" ui-sref="{{nav.href}}">
+      {{nav.name}}
+    </li>
+  </ul>
+  <ul class="nav__subgroup" ng-class="nav.href == group ? 'active' : ''" ng-repeat="nav in nav">
+    <li ng-class="menu.href == link ? 'active' : ''" ng-repeat="menu in nav.menu" ui-sref="{{menu.href}}">
+      {{menu.name}} {{active}}
+    </li>
+  </ul>
+</section>
