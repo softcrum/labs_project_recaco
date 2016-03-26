@@ -23,11 +23,17 @@
   "menu.my_account": "Mi cuenta de usuario",
   "menu.my_account_index": "Perfil",
   "menu.my_account_logout": "Cerrar sesión",
+  "nav.dashboard_index": "Panel de control",
   "nav.home_index": "Inicio",
   "nav.menu_about_contact": "Contáctenos",
   "nav.menu_about_contributors": "Colaboradores",
   "nav.menu_about_index": "Acerca del proyecto",
   "nav.menu_about_version": "Versión de la aplicación",
   "nav.menu_home_index": "Portada",
+  "nav.menu_resources_ethics_committee": "Comité de ética",
+  "nav.menu_resources_index": "Portada",
+  "nav.menu_resources_informed_consent": "Consentimiento informado",
+  "nav.menu_resources_privacy_promise": "Política de privacidad",
+  "nav.menu_resources_project_summary": "Resumen del proyecto",
   "nav.resources_index": "Recursos"
 }

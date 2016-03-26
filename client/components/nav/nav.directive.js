@@ -29,6 +29,9 @@ angular.module('projectRecacoApp')
             'name': $translate('nav.menu_about_contact')
           }]
         }, {
+          'href': 'DashboardIndex',
+          'name': $translate('nav.dashboard_index')
+        }, {
           'href': 'ResourcesIndex',
           'name': $translate('nav.resources_index'),
           'menu': [{
