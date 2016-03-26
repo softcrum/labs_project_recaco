@@ -1,13 +1,4 @@
 {
-  "excludeFiles": [
-    "client/app/app.constant.js"
-  ],
-  "esnext": true,
-  "maximumLineLength": {
-    "value": 100,
-    "allowComments": true,
-    "allowRegex": true
-  },
   "disallowMixedSpacesAndTabs": true,
   "disallowMultipleLineStrings": true,
   "disallowNewlineBeforeBlockStatements": true,
@@ -28,16 +19,25 @@
   "disallowSpacesInsideParentheses": true,
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
+  "esnext": true,
+  "excludeFiles": [
+    "client/app/app.constant.js"
+  ],
+  "maximumLineLength": {
+    "value": 100,
+    "allowComments": true,
+    "allowRegex": true
+  },
   "requireCommaBeforeLineBreak": true,
   "requireLineFeedAtFileEnd": true,
   "requireSpaceAfterBinaryOperators": ["?", ":", "+", "-", "/", "*", "%", "==", "===", "!=", "!==", ">", ">=", "<", "<=", "&&", "||"],
-  "requireSpaceBeforeBinaryOperators": ["?", ":", "+", "-", "/", "*", "%", "==", "===", "!=", "!==", ">", ">=", "<", "<=", "&&", "||"],
   "requireSpaceAfterKeywords": ["if", "else", "for", "while", "do", "switch", "return", "try", "catch"],
+  "requireSpaceBeforeBinaryOperators": ["?", ":", "+", "-", "/", "*", "%", "==", "===", "!=", "!==", ">", ">=", "<", "<=", "&&", "||"],
   "requireSpaceBeforeBlockStatements": true,
   "requireSpacesInConditionalExpression": {
+    "afterConsequent": true,
     "afterTest": true,
     "beforeConsequent": true,
-    "afterConsequent": true,
     "beforeAlternate": true
   },
   "requireSpacesInFunction": {
