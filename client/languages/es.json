@@ -30,10 +30,16 @@
   "nav.menu_about_index": "Acerca del proyecto",
   "nav.menu_about_version": "Versión de la aplicación",
   "nav.menu_home_index": "Portada",
+  "nav.menu_project_index": "Inicio",
+  "nav.menu_project_background": "Estado del arte",
+  "nav.menu_project_development": "Desarrollo",
+  "nav.menu_project_experiment": "Experimento",
+  "nav.menu_project_motivation": "Motivación",
   "nav.menu_resources_ethics_committee": "Comité de ética",
-  "nav.menu_resources_index": "Portada",
+  "nav.menu_resources_index": "Inicio",
   "nav.menu_resources_informed_consent": "Consentimiento informado",
   "nav.menu_resources_privacy_promise": "Política de privacidad",
   "nav.menu_resources_project_summary": "Resumen del proyecto",
+  "nav.project_index": "Proyecto",
   "nav.resources_index": "Recursos"
 }
