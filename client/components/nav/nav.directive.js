@@ -51,6 +51,19 @@ angular.module('projectRecacoApp')
             'name': $translate('nav.menu_project_experiment')
           }]
         }, {
+          'href': 'ResearchIndex',
+          'name': $translate('nav.research_index'),
+          'menu': [{
+            'href': 'ResearchIndex',
+            'name': $translate('nav.menu_research_index')
+          }, {
+            'href': 'ResearchConclusion',
+            'name': $translate('nav.menu_research_conclusion')
+          }, {
+            'href': 'ResearchPublish',
+            'name': $translate('nav.menu_research_publish')
+          }]
+        }, {
           'href': 'ResourcesIndex',
           'name': $translate('nav.resources_index'),
           'menu': [{
