@@ -3,7 +3,6 @@
 .tmp
 client/bower_components
 coverage
-dist
 node_modules
 public
 npm-debug.log
