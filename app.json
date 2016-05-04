@@ -1,0 +1,26 @@
+{
+  "name": "labs_project_recaco",
+  "scripts": {
+  },
+  "env": {
+    "MONGOLAB_URI": {
+      "required": true
+    },
+    "NODE_ENV": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
